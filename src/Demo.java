@@ -24,7 +24,7 @@ public class Demo {
 	Scanner keyboard = new Scanner(System.in);
 	
 	while (! done) {
-	    System.out.println("\nEnter commands, stop with \"done\"");
+	    System.out.println("\nEnter commands, single word names and items, stop with \"done\"");
 	    System.out.println("\tadd <name>");
 	    System.out.println("\tcheckout <item> by <name>");
 	    try {
