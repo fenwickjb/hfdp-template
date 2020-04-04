@@ -17,7 +17,7 @@ public class Library {
 
     private boolean checkPatronAccount(Patron p) {
 	System.out.println("checking account...");
-	return true;
+	return p.numCheckedOut() < 8;
     }
 
     private String getSuggestion(String item) {
@@ -47,7 +47,7 @@ public class Library {
     }
 
     private int getDuration(Patron p) {
-	return 14;
+	return p.ckoutDuration();
     }
 
     public void checkout(String item, String name) {
