@@ -22,5 +22,8 @@ class Patron {
     public void checkout(String itemName) {
 	checkedOut.add(itemName);
     }
+    public int numCheckedOut() {
+        return checkedOut.size();
+    }
 }
 
