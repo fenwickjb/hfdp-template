@@ -15,17 +15,17 @@ public class Library {
 	patrons.put(patronName, new Patron(patronName));
     }
 
-    private boolean checkPatronAccount(Patron p) {
+    protected boolean checkPatronAccount(Patron p) {
 	System.out.println("checking account...");
 	return p.numCheckedOut() < 8;
     }
 
-    private String getSuggestion(String item) {
+    protected String getSuggestion(String item) {
 	System.out.println("looking up suggestions...");
 	return "NC-centric suggested items...";
     }
 
-    private void printReceipt(Patron p, String item, int days, String suggestion) {
+    protected void printReceipt(Patron p, String item, int days, String suggestion) {
 	SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");  
 	Date date = new Date();
 	String datetimeString = formatter.format(date);  	
@@ -46,7 +46,7 @@ public class Library {
 	System.out.println("--------------------------------------");
     }
 
-    private int getDuration(Patron p) {
+    protected int getDuration(Patron p) {
 	return p.ckoutDuration();
     }
 
