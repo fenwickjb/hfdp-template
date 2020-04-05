@@ -22,7 +22,7 @@ public class Library {
 
     private String getSuggestion(String item) {
 	System.out.println("looking up suggestions...");
-	return "Suggested items...";
+	return "NC-centric suggested items...";
     }
 
     private void printReceipt(Patron p, String item, int days, String suggestion) {
